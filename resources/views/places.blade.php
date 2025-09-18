@@ -10,9 +10,9 @@
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900 dark:text-gray-100">
 
-                    <div class="flex items-center border-b-4 border-white border-double pt-4">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 border-b-4 border-white border-double pt-16">
                         <!-- Flag -->
-                        <div>
+                        <div class="flex">
                             <img src="images/China Flag.png" alt="Flag/Map of China"
                                 class="inline w-[300px] h-[282.91px] float-left p-5 m-8 border-2 border-white rounded-2xl">
                         </div>
