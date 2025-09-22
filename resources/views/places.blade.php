@@ -10,9 +10,9 @@
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900 dark:text-gray-100">
 
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 border-b-4 border-white border-double pt-16">
+                    <div class="flex flex-col md:flex-row items-center border-b-4 border-white border-double pt-4">
                         <!-- Flag -->
-                        <div class="flex">
+                        <div>
                             <img src="images/China Flag.png" alt="Flag/Map of China"
                                 class="inline w-[300px] h-[282.91px] float-left p-5 m-8 border-2 border-white rounded-2xl">
                         </div>
@@ -40,9 +40,9 @@
                             <h1 class="text-2xl font-semibold">Urban Destinations</h1>
                         </div>
 
-                        <div class="flex flex-wrap gap-6 m-5">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 m-5">
                             <!-- Jinghong -->
-                            <div class="relative w-full md:w-1/3 mb-4 rounded overflow-hidden shadow-lg">
+                            <div class="relative rounded overflow-hidden shadow-lg">
                                 <div class="absolute inset-0 bg-cover bg-center filter blur-sm z-0" style="background-image: url('images/places/china/Xishuangbanna.jpg')"></div>
                                 <div class="absolute inset-0 bg-gray-800/50 z-0"></div>
 
@@ -67,7 +67,7 @@
                             </div>
 
                             <!-- Shang Xia Jiu Bu Xing Jie -->
-                            <div class="relative w-full md:w-1/3 mb-4 rounded overflow-hidden shadow-lg">
+                            <div class="relative rounded overflow-hidden shadow-lg">
                                 <div class="absolute inset-0 bg-cover bg-center filter blur-sm z-0" style="background-image: url('images/places/china/Shangxiajiu Pedestrian Street.webp')"></div>
                                 <div class="absolute inset-0 bg-gray-800/50 z-0"></div>
 
@@ -92,7 +92,7 @@
                             </div>
 
                             <!-- Nan Jing Lu Bu Xing Jie -->
-                            <div class="relative w-full md:w-1/3 mb-4 rounded overflow-hidden shadow-lg">
+                            <div class="relative rounded overflow-hidden shadow-lg">
                                 <div class="absolute inset-0 bg-cover bg-center filter blur-sm z-0" style="background-image: url('images/places/china/Nanjing Road.jpg')"></div>
                                 <div class="absolute inset-0 bg-gray-800/50 z-0"></div>
 
@@ -122,9 +122,9 @@
                             <h1 class="text-2xl font-semibold">Historical Sites</h1>
                         </div>
 
-                        <div class="flex flex-wrap gap-6 m-5">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 m-5">
                             <!-- Lijiang -->
-                            <div class="relative w-full md:w-1/3 mb-4 rounded overflow-hidden shadow-lg">
+                            <div class="relative rounded overflow-hidden shadow-lg">
                                 <div class="absolute inset-0 bg-cover bg-center filter blur-sm z-0" style="background-image: url('images/places/china/Lijiang.jpg')"></div>
                                 <div class="absolute inset-0 bg-gray-800/50 z-0"></div>
 
@@ -149,7 +149,7 @@
                             </div>
 
                             <!-- Leshan Giant Buddha -->
-                            <div class="relative w-full md:w-1/3 mb-4 rounded overflow-hidden shadow-lg">
+                            <div class="relative rounded overflow-hidden shadow-lg">
                                 <div class="absolute inset-0 bg-cover bg-center filter blur-sm z-0" style="background-image: url('images/places/china/leshan giant buddha.jpg')"></div>
                                 <div class="absolute inset-0 bg-gray-800/50 z-0"></div>
 
@@ -174,7 +174,7 @@
                             </div>
 
                             <!-- Great Wall -->
-                            <div class="relative w-full md:w-1/3 mb-4 rounded overflow-hidden shadow-lg">
+                            <div class="relative rounded overflow-hidden shadow-lg">
                                 <div class="absolute inset-0 bg-cover bg-center filter blur-sm z-0" style="background-image: url('images/places/china/The Great Wall Of China.jpg')"></div>
                                 <div class="absolute inset-0 bg-gray-800/50 z-0"></div>
 
@@ -198,7 +198,7 @@
                                 </div>
                             </div>
                             <!-- Yu Garden -->
-                            <div class="relative w-full md:w-1/3 mb-4 rounded overflow-hidden shadow-lg">
+                            <div class="relative rounded overflow-hidden shadow-lg">
                                 <div class="absolute inset-0 bg-cover bg-center filter blur-sm z-0" style="background-image: url('images/places/china/Yu Garden.jpg')"></div>
                                 <div class="absolute inset-0 bg-gray-800/50 z-0"></div>
 
@@ -228,9 +228,9 @@
                             <h1 class="text-2xl font-semibold">Natural Landmarks</h1>
                         </div>
 
-                        <div class="flex flex-wrap gap-6 m-5">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 m-5">
                             <!-- Yangtze River -->
-                            <div class="relative w-full md:w-1/3 mb-4 rounded overflow-hidden shadow-lg">
+                            <div class="relative rounded overflow-hidden shadow-lg">
                                 <div class="absolute inset-0 bg-cover bg-center filter blur-sm z-0" style="background-image: url('images/places/china/yangtze river and the three gorges.jpg')"></div>
                                 <div class="absolute inset-0 bg-gray-800/50 z-0"></div>
 
@@ -255,7 +255,7 @@
                             </div>
 
                             <!-- Zhangjiajie -->
-                            <div class="relative w-full md:w-1/3 mb-4 rounded overflow-hidden shadow-lg">
+                            <div class="relative rounded overflow-hidden shadow-lg">
                                 <div class="absolute inset-0 bg-cover bg-center filter blur-sm z-0" style="background-image: url('images/places/china/Zhangjiajie.jpg')"></div>
                                 <div class="absolute inset-0 bg-gray-800/50 z-0"></div>
 
@@ -280,7 +280,7 @@
                             </div>
 
                             <!-- Yuanyang -->
-                            <div class="relative w-full md:w-1/3 mb-4 rounded overflow-hidden shadow-lg">
+                            <div class="relative rounded overflow-hidden shadow-lg">
                                 <div class="absolute inset-0 bg-cover bg-center filter blur-sm z-0" style="background-image: url('images/places/china/Yuanyang Rice Terraced.jpg')"></div>
                                 <div class="absolute inset-0 bg-gray-800/50 z-0"></div>
 
@@ -305,7 +305,7 @@
                             </div>
 
                             <!-- Yangshuo -->
-                            <div class="relative w-full md:w-1/3 mb-4 rounded overflow-hidden shadow-lg">
+                            <div class="relative rounded overflow-hidden shadow-lg">
                                 <div class="absolute inset-0 bg-cover bg-center filter blur-sm z-0" style="background-image: url('images/places/china/Yangshuo.jpg')"></div>
                                 <div class="absolute inset-0 bg-gray-800/50 z-0"></div>
 
@@ -330,7 +330,7 @@
                             </div>
 
                             <!-- Huangguoshu Waterfall -->
-                            <div class="relative w-full md:w-1/3 mb-4 rounded overflow-hidden shadow-lg">
+                            <div class="relative rounded overflow-hidden shadow-lg">
                                 <div class="absolute inset-0 bg-cover bg-center filter blur-sm z-0" style="background-image: url('images/places/china/Huangguoshu Waterfall.jpg')"></div>
                                 <div class="absolute inset-0 bg-gray-800/50 z-0"></div>
 
