@@ -9,7 +9,7 @@ Route::get('/', function () {
 
 Route::get('/places', function () {
     return view('places');
-});
+})->middleware("auth");
 
 Route::get('/present', function () {
     return view('present');
