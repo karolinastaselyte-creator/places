@@ -1,7 +1,7 @@
 <nav x-data="{ open: false }" class="bg-[#2D5246] border-b-4 border-double border-white">
     <!-- Primary Navigation Menu -->
     <div class="mx-auto sm:px-6 lg:px-8">
-        <div class="flex justify-between h-16">
+        <div class="flex justify-between h-[55px]">
             <div class="flex items-center w-full justify-between">
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
@@ -11,19 +11,20 @@
                 </div>
 
                 <!-- Navigation Links -->
-                <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto">
+                <!--<div class="hidden space-x-8 sm:-my-px sm:flex mx-auto">
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" class="text-white">
                         {{ __('Dashboard') }}
                     </x-nav-link>
-                </div>
+                </div> -->
             </div>
 
             <!-- Settings Dropdown -->
             <div class="hidden sm:flex sm:items-center sm:ms-6">
                 <x-dropdown align="right" width="48">
                     <x-slot name="trigger">
-                        <button class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none transition ease-in-out duration-150">
-                            <div>{{ Auth::user()->name }}</div>
+                        <button class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 dark:hover:text-gray-300 focus:outline-none transition ease-in-out duration-150">
+                            <!-- Profile Picture instead of Name -->
+                            <img class="h-8 w-8 rounded-full object-cover" src="{{ asset('images/defult_user.svg') }}" alt="{{ Auth::user()->name }}">
 
                             <div class="ms-1">
                                 <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">

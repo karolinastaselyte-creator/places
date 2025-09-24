@@ -13,7 +13,7 @@ Route::get('/places', function () {
 
 Route::get('/present', function () {
     return view('present');
-});
+})->middleware("auth");
 
 Route::get('/dashboard', function () {
     return view('dashboard');
