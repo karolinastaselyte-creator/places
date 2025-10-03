@@ -10,7 +10,7 @@
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900 dark:text-gray-100">
 
-                    <div class="flex flex-col md:flex-row items-center border-b-4 border-white border-double pt-4">
+                    <div class="flex flex-col lg:flex-row items-center border-b-4 border-white border-double pt-4">
                         <!-- Flag -->
                         <div>
                             <img src="images/China Flag.png" alt="Flag/Map of China"
@@ -19,8 +19,8 @@
 
                         <!-- Title & Description -->
                         <div class="flex flex-1 flex-col justify-center text-white">
-                            <h1 class="text-6xl font-bold">China</h1>
-                            <p class="mr-8 text-justify text-base leading-relaxed">
+                            <h1 class="text-6xl font-bold text-center lg:text-justify">China</h1>
+                            <p class="ml-8 lg:ml-0 mr-8 mb-4 lg:mb-0 text-justify text-base leading-relaxed">
                                 People's Republic of China or commonly known as just China is a country in East Asia. 
                                 China has a land aria of 9.597 million km², which makes it the third-largest country by land aria, 
                                 fitting for its other title of being the second-most populous country in the world, with a population exceeding 1.4 billion. 
@@ -43,8 +43,9 @@
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 m-5">
                             <!-- Jinghong -->
                             <div class="relative rounded overflow-hidden shadow-lg">
-                                <div class="absolute inset-0 bg-cover bg-center filter blur-sm z-0" style="background-image: url('images/places/china/Xishuangbanna.jpg')"></div>
-                                <div class="absolute inset-0 bg-gray-800/50 z-0"></div>
+                                <div class="absolute inset-0 bg-cover bg-center filter blur z-0" 
+                                    style="background-image: url('images/places/china/Xishuangbanna.jpg')"></div>
+                                <div class="absolute inset-0 bg-gray-900/70 z-0"></div>
 
                                 <div class="relative p-5 z-10 text-white">
                                     <img src="images/places/china/Xishuangbanna.jpg" alt="" class="w-full h-52 object-cover mb-4 rounded">
@@ -53,11 +54,11 @@
                                             <h3 class="text-lg font-semibold">Jinghong</h3>
                                             <div class="text-sm">
                                                 <a target="_blank" href="https://www.google.com/maps/place/Jinghong,+Xishuangbanna+Dai+Autonomous+Prefecture,+Yunnan,+China/@22.0218016,100.3129501,9z/data=!3m1!4b1!4m6!3m5!1s0x312ab50227b0d78d:0x41bceda458368c20!8m2!3d22.0000799!4d100.77163!16zL20vMDRtbXJ4?entry=ttu" class="hover:underline">
-                                                    22.0075° <span class="text-red-500">N</span>, 100.7974° <span class="text-gray-900">E</span>
+                                                    22.0075° <span>N</span>, 100.7974° <span>E</span>
                                                 </a>
                                             </div>
                                         </div>
-                                        <span class="bg-white text-gray-800 font-bold rounded-full px-3 py-1">4.0</span>
+                                        <span class="bg-white text-gray-800 font-bold rounded-full w-10 h-10 flex items-center justify-center">4.0</span>
                                     </div>
 
                                     <p class="text-sm mb-2">
@@ -68,8 +69,8 @@
 
                             <!-- Shang Xia Jiu Bu Xing Jie -->
                             <div class="relative rounded overflow-hidden shadow-lg">
-                                <div class="absolute inset-0 bg-cover bg-center filter blur-sm z-0" style="background-image: url('images/places/china/Shangxiajiu Pedestrian Street.webp')"></div>
-                                <div class="absolute inset-0 bg-gray-800/50 z-0"></div>
+                                <div class="absolute inset-0 bg-cover bg-center filter blur z-0" style="background-image: url('images/places/china/Shangxiajiu Pedestrian Street.webp')"></div>
+                                <div class="absolute inset-0 bg-gray-900/70 z-0"></div>
 
                                 <div class="relative p-5 z-10 text-white">
                                     <img src="images/places/china/Shangxiajiu Pedestrian Street.webp" alt="" class="w-full h-52 object-cover mb-4 rounded">
@@ -78,11 +79,11 @@
                                             <h3 class="text-lg font-semibold">Shang Xia Jiu Bu Xing Jie</h3>
                                             <div class="text-sm">
                                                 <a target="_blank" href="https://www.google.com/maps/place/Shang+Xia+Jiu+Bu+Xing+Jie,+Li+Wan+Qu,+Guangzhou,+China/@23.11395,113.24668,17z" class="hover:underline">
-                                                    23.1140° <span class="text-red-500">N</span>, 113.2467° <span class="text-gray-900">E</span>
+                                                    23.1140° <span>N</span>, 113.2467° <span>E</span>
                                                 </a>
                                             </div>
                                         </div>
-                                        <span class="bg-white text-gray-800 font-bold rounded-full px-3 py-1">4.3</span>
+                                        <span class="bg-white text-gray-800 font-bold rounded-full w-10 h-10 flex items-center justify-center">4.3</span>
                                     </div>
 
                                     <p class="text-sm mb-2">
@@ -93,8 +94,8 @@
 
                             <!-- Nan Jing Lu Bu Xing Jie -->
                             <div class="relative rounded overflow-hidden shadow-lg">
-                                <div class="absolute inset-0 bg-cover bg-center filter blur-sm z-0" style="background-image: url('images/places/china/Nanjing Road.jpg')"></div>
-                                <div class="absolute inset-0 bg-gray-800/50 z-0"></div>
+                                <div class="absolute inset-0 bg-cover bg-center filter blur z-0" style="background-image: url('images/places/china/Nanjing Road.jpg')"></div>
+                                <div class="absolute inset-0 bg-gray-900/70 z-0"></div>
 
                                 <div class="relative p-5 z-10 text-white">
                                     <img src="images/places/china/Nanjing Road.jpg" alt="" class="w-full h-52 object-cover mb-4 rounded">
@@ -103,11 +104,11 @@
                                             <h3 class="text-lg font-semibold">Nan Jing Lu Bu Xing Jie</h3>
                                             <div class="text-sm">
                                                 <a target="_blank" href="https://www.google.com/maps/place/People's+Square,+Nanjing+East+Road+Residential+District,+Shanghai,+China" class="hover:underline">
-                                                    31.1417° <span class="text-red-500">N</span>, 121.2905° <span class="text-gray-900">E</span>
+                                                    31.1417° <span>N</span>, 121.2905° <span>E</span>
                                                 </a>
                                             </div>
                                         </div>
-                                        <span class="bg-white text-gray-800 font-bold rounded-full px-3 py-1">4.0</span>
+                                        <span class="bg-white text-gray-800 font-bold rounded-full w-10 h-10 flex items-center justify-center">4.0</span>
                                     </div>
 
                                     <p class="text-sm mb-2">
@@ -125,8 +126,8 @@
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 m-5">
                             <!-- Lijiang -->
                             <div class="relative rounded overflow-hidden shadow-lg">
-                                <div class="absolute inset-0 bg-cover bg-center filter blur-sm z-0" style="background-image: url('images/places/china/Lijiang.jpg')"></div>
-                                <div class="absolute inset-0 bg-gray-800/50 z-0"></div>
+                                <div class="absolute inset-0 bg-cover bg-center filter blur z-0" style="background-image: url('images/places/china/Lijiang.jpg')"></div>
+                                <div class="absolute inset-0 bg-gray-900/70 z-0"></div>
 
                                 <div class="relative p-5 z-10 text-white">
                                     <img src="images/places/china/Lijiang.jpg" alt="Lijiang Old Town" class="w-full h-52 object-cover mb-4 rounded">
@@ -135,11 +136,11 @@
                                             <h3 class="text-lg font-semibold">Lijiang Old Town</h3>
                                             <div class="text-sm">
                                                 <a target="_blank" href="https://www.google.com/maps/place/Lijiang,+Yunnan,+China" class="hover:underline">
-                                                    26.8719° <span class="text-red-500">N</span>, 100.2315° <span class="text-gray-900">E</span>
+                                                    26.8719° <span>N</span>, 100.2315° <span>E</span>
                                                 </a>
                                             </div>
                                         </div>
-                                        <span class="bg-white text-gray-800 font-bold rounded-full px-3 py-1">4.6</span>
+                                        <span class="bg-white text-gray-800 font-bold rounded-full w-10 h-10 flex items-center justify-center">4.6</span>
                                     </div>
 
                                     <p class="text-sm mb-2">
@@ -150,8 +151,8 @@
 
                             <!-- Leshan Giant Buddha -->
                             <div class="relative rounded overflow-hidden shadow-lg">
-                                <div class="absolute inset-0 bg-cover bg-center filter blur-sm z-0" style="background-image: url('images/places/china/leshan giant buddha.jpg')"></div>
-                                <div class="absolute inset-0 bg-gray-800/50 z-0"></div>
+                                <div class="absolute inset-0 bg-cover bg-center filter blur z-0" style="background-image: url('images/places/china/leshan giant buddha.jpg')"></div>
+                                <div class="absolute inset-0 bg-gray-900/70 z-0"></div>
 
                                 <div class="relative p-5 z-10 text-white">
                                     <img src="images/places/china/leshan giant buddha.jpg" alt="Leshan Giant Buddha" class="w-full h-52 object-cover mb-4 rounded">
@@ -160,11 +161,11 @@
                                             <h3 class="text-lg font-semibold">Leshan Giant Buddha</h3>
                                             <div class="text-sm">
                                                 <a target="_blank" href="https://www.google.com/maps/place/Leshan,+Sichuan,+China" class="hover:underline">
-                                                    29.5522° <span class="text-red-500">N</span>, 103.7694° <span class="text-gray-900">E</span>
+                                                    29.5522° <span>N</span>, 103.7694° <span>E</span>
                                                 </a>
                                             </div>
                                         </div>
-                                        <span class="bg-white text-gray-800 font-bold rounded-full px-3 py-1">4.7</span>
+                                        <span class="bg-white text-gray-800 font-bold rounded-full w-10 h-10 flex items-center justify-center">4.7</span>
                                     </div>
 
                                     <p class="text-sm mb-2">
@@ -175,8 +176,8 @@
 
                             <!-- Great Wall -->
                             <div class="relative rounded overflow-hidden shadow-lg">
-                                <div class="absolute inset-0 bg-cover bg-center filter blur-sm z-0" style="background-image: url('images/places/china/The Great Wall Of China.jpg')"></div>
-                                <div class="absolute inset-0 bg-gray-800/50 z-0"></div>
+                                <div class="absolute inset-0 bg-cover bg-center filter blur z-0" style="background-image: url('images/places/china/The Great Wall Of China.jpg')"></div>
+                                <div class="absolute inset-0 bg-gray-900/70 z-0"></div>
 
                                 <div class="relative p-5 z-10 text-white">
                                     <img src="images/places/china/The Great Wall Of China.jpg" alt="Great Wall of China" class="w-full h-52 object-cover mb-4 rounded">
@@ -185,11 +186,11 @@
                                             <h3 class="text-lg font-semibold">Great Wall of China</h3>
                                             <div class="text-sm">
                                                 <a target="_blank" href="https://www.google.com/maps/place/Great+Wall+of+China" class="hover:underline">
-                                                    40.4319° <span class="text-red-500">N</span>, 116.5704° <span class="text-gray-900">E</span>
+                                                    40.4319° <span>N</span>, 116.5704° <span>E</span>
                                                 </a>
                                             </div>
                                         </div>
-                                        <span class="bg-white text-gray-800 font-bold rounded-full px-3 py-1">4.8</span>
+                                        <span class="bg-white text-gray-800 font-bold rounded-full w-10 h-10 flex items-center justify-center">4.8</span>
                                     </div>
 
                                     <p class="text-sm mb-2">
@@ -199,8 +200,8 @@
                             </div>
                             <!-- Yu Garden -->
                             <div class="relative rounded overflow-hidden shadow-lg">
-                                <div class="absolute inset-0 bg-cover bg-center filter blur-sm z-0" style="background-image: url('images/places/china/Yu Garden.jpg')"></div>
-                                <div class="absolute inset-0 bg-gray-800/50 z-0"></div>
+                                <div class="absolute inset-0 bg-cover bg-center filter blur z-0" style="background-image: url('images/places/china/Yu Garden.jpg')"></div>
+                                <div class="absolute inset-0 bg-gray-900/70 z-0"></div>
 
                                 <div class="relative p-5 z-10 text-white">
                                     <img src="images/places/china/Yu Garden.jpg" alt="Yu Garden" class="w-full h-52 object-cover mb-4 rounded">
@@ -209,11 +210,11 @@
                                             <h3 class="text-lg font-semibold">Yu Garden</h3>
                                             <div class="text-sm">
                                                 <a target="_blank" href="https://www.google.com/maps/place/Yu+Garden" class="hover:underline">
-                                                    31.2274° <span class="text-red-500">N</span>, 121.4929° <span class="text-gray-900">E</span>
+                                                    31.2274° <span>N</span>, 121.4929° <span>E</span>
                                                 </a>
                                             </div>
                                         </div>
-                                        <span class="bg-white text-gray-800 font-bold rounded-full px-3 py-1">4.5</span>
+                                        <span class="bg-white text-gray-800 font-bold rounded-full w-10 h-10 flex items-center justify-center">4.5</span>
                                     </div>
 
                                     <p class="text-sm mb-2">
@@ -231,8 +232,8 @@
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 m-5">
                             <!-- Yangtze River -->
                             <div class="relative rounded overflow-hidden shadow-lg">
-                                <div class="absolute inset-0 bg-cover bg-center filter blur-sm z-0" style="background-image: url('images/places/china/yangtze river and the three gorges.jpg')"></div>
-                                <div class="absolute inset-0 bg-gray-800/50 z-0"></div>
+                                <div class="absolute inset-0 bg-cover bg-center filter blur z-0" style="background-image: url('images/places/china/yangtze river and the three gorges.jpg')"></div>
+                                <div class="absolute inset-0 bg-gray-900/70 z-0"></div>
 
                                 <div class="relative p-5 z-10 text-white">
                                     <img src="images/places/china/yangtze river and the three gorges.jpg" alt="Yangtze River" class="w-full h-52 object-cover mb-4 rounded">
@@ -241,11 +242,11 @@
                                             <h3 class="text-lg font-semibold">Yangtze River</h3>
                                             <div class="text-sm">
                                                 <a target="_blank" href="https://www.google.com/maps/place/Yangtze+River" class="hover:underline">
-                                                    29.5630° <span class="text-red-500">N</span>, 106.5516° <span class="text-gray-900">E</span>
+                                                    29.5630° <span>N</span>, 106.5516° <span>E</span>
                                                 </a>
                                             </div>
                                         </div>
-                                        <span class="bg-white text-gray-800 font-bold rounded-full px-3 py-1">4.4</span>
+                                        <span class="bg-white text-gray-800 font-bold rounded-full w-10 h-10 flex items-center justify-center">4.4</span>
                                     </div>
 
                                     <p class="text-sm mb-2">
@@ -256,8 +257,8 @@
 
                             <!-- Zhangjiajie -->
                             <div class="relative rounded overflow-hidden shadow-lg">
-                                <div class="absolute inset-0 bg-cover bg-center filter blur-sm z-0" style="background-image: url('images/places/china/Zhangjiajie.jpg')"></div>
-                                <div class="absolute inset-0 bg-gray-800/50 z-0"></div>
+                                <div class="absolute inset-0 bg-cover bg-center filter blur z-0" style="background-image: url('images/places/china/Zhangjiajie.jpg')"></div>
+                                <div class="absolute inset-0 bg-gray-900/70 z-0"></div>
 
                                 <div class="relative p-5 z-10 text-white">
                                     <img src="images/places/china/Zhangjiajie.jpg" alt="Zhangjiajie National Forest Park" class="w-full h-52 object-cover mb-4 rounded">
@@ -266,11 +267,11 @@
                                             <h3 class="text-lg font-semibold">Zhangjiajie National Forest Park</h3>
                                             <div class="text-sm">
                                                 <a target="_blank" href="https://www.google.com/maps/place/Zhangjiajie" class="hover:underline">
-                                                    29.3340° <span class="text-red-500">N</span>, 110.4792° <span class="text-gray-900">E</span>
+                                                    29.3340° <span>N</span>, 110.4792° <span>E</span>
                                                 </a>
                                             </div>
                                         </div>
-                                        <span class="bg-white text-gray-800 font-bold rounded-full px-3 py-1">4.9</span>
+                                        <span class="bg-white text-gray-800 font-bold rounded-full w-10 h-10 flex items-center justify-center">4.9</span>
                                     </div>
 
                                     <p class="text-sm mb-2">
@@ -281,8 +282,8 @@
 
                             <!-- Yuanyang -->
                             <div class="relative rounded overflow-hidden shadow-lg">
-                                <div class="absolute inset-0 bg-cover bg-center filter blur-sm z-0" style="background-image: url('images/places/china/Yuanyang Rice Terraced.jpg')"></div>
-                                <div class="absolute inset-0 bg-gray-800/50 z-0"></div>
+                                <div class="absolute inset-0 bg-cover bg-center filter blur z-0" style="background-image: url('images/places/china/Yuanyang Rice Terraced.jpg')"></div>
+                                <div class="absolute inset-0 bg-gray-900/70 z-0"></div>
 
                                 <div class="relative p-5 z-10 text-white">
                                     <img src="images/places/china/Yuanyang Rice Terraced.jpg" alt="Yuanyang Rice Terraces" class="w-full h-52 object-cover mb-4 rounded">
@@ -291,11 +292,11 @@
                                             <h3 class="text-lg font-semibold">Yuanyang Rice Terraces</h3>
                                             <div class="text-sm">
                                                 <a target="_blank" href="https://www.google.com/maps/place/Yuanyang,+Yunnan,+China" class="hover:underline">
-                                                    23.1040° <span class="text-red-500">N</span>, 102.7512° <span class="text-gray-900">E</span>
+                                                    23.1040° <span>N</span>, 102.7512° <span>E</span>
                                                 </a>
                                             </div>
                                         </div>
-                                        <span class="bg-white text-gray-800 font-bold rounded-full px-3 py-1">4.7</span>
+                                        <span class="bg-white text-gray-800 font-bold rounded-full w-10 h-10 flex items-center justify-center">4.7</span>
                                     </div>
 
                                     <p class="text-sm mb-2">
@@ -306,8 +307,8 @@
 
                             <!-- Yangshuo -->
                             <div class="relative rounded overflow-hidden shadow-lg">
-                                <div class="absolute inset-0 bg-cover bg-center filter blur-sm z-0" style="background-image: url('images/places/china/Yangshuo.jpg')"></div>
-                                <div class="absolute inset-0 bg-gray-800/50 z-0"></div>
+                                <div class="absolute inset-0 bg-cover bg-center filter blur z-0" style="background-image: url('images/places/china/Yangshuo.jpg')"></div>
+                                <div class="absolute inset-0 bg-gray-900/70 z-0"></div>
 
                                 <div class="relative p-5 z-10 text-white">
                                     <img src="images/places/china/Yangshuo.jpg" alt="Yangshuo" class="w-full h-52 object-cover mb-4 rounded">
@@ -316,11 +317,11 @@
                                             <h3 class="text-lg font-semibold">Yangshuo</h3>
                                             <div class="text-sm">
                                                 <a target="_blank" href="https://www.google.com/maps/place/Yangshuo,+China" class="hover:underline">
-                                                    24.7800° <span class="text-red-500">N</span>, 110.4970° <span class="text-gray-900">E</span>
+                                                    24.7800° <span>N</span>, 110.4970° <span>E</span>
                                                 </a>
                                             </div>
                                         </div>
-                                        <span class="bg-white text-gray-800 font-bold rounded-full px-3 py-1">4.6</span>
+                                        <span class="bg-white text-gray-800 font-bold rounded-full w-10 h-10 flex items-center justify-center">4.6</span>
                                     </div>
 
                                     <p class="text-sm mb-2">
@@ -331,8 +332,8 @@
 
                             <!-- Huangguoshu Waterfall -->
                             <div class="relative rounded overflow-hidden shadow-lg">
-                                <div class="absolute inset-0 bg-cover bg-center filter blur-sm z-0" style="background-image: url('images/places/china/Huangguoshu Waterfall.jpg')"></div>
-                                <div class="absolute inset-0 bg-gray-800/50 z-0"></div>
+                                <div class="absolute inset-0 bg-cover bg-center filter blur z-0" style="background-image: url('images/places/china/Huangguoshu Waterfall.jpg')"></div>
+                                <div class="absolute inset-0 bg-gray-900/70 z-0"></div>
 
                                 <div class="relative p-5 z-10 text-white">
                                     <img src="images/places/china/Huangguoshu Waterfall.jpg" alt="Huangguoshu Waterfall" class="w-full h-52 object-cover mb-4 rounded">
@@ -341,11 +342,11 @@
                                             <h3 class="text-lg font-semibold">Huangguoshu Waterfall</h3>
                                             <div class="text-sm">
                                                 <a target="_blank" href="https://www.google.com/maps/place/Huangguoshu+Waterfall" class="hover:underline">
-                                                    25.9894° <span class="text-red-500">N</span>, 105.6555° <span class="text-gray-900">E</span>
+                                                    25.9894° <span>N</span>, 105.6555° <span>E</span>
                                                 </a>
                                             </div>
                                         </div>
-                                        <span class="bg-white text-gray-800 font-bold rounded-full px-3 py-1">4.6</span>
+                                        <span class="bg-white text-gray-800 font-bold rounded-full w-10 h-10 flex items-center justify-center">4.6</span>
                                     </div>
 
                                     <p class="text-sm mb-2">
