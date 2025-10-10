@@ -5,8 +5,9 @@
                 <!-- Text box -->
                 <div class="p-8 bg-black/50 border border-white rounded text-white text-center">
                     <div class="wel">
-                        <h3>Welcome to the Official Wonders of the World website</h3>
+                        <h3>Welcome to the Official Mapory website</h3>
                         <p>Our mission is to interduce upcoming travelers to new and amazing places from all around the world.</p>
+                        <p>At Mapory, we believe that every journey begins with inspiration. Whether you're planning a weekend getaway or a cross-continental adventure, our platform helps you discover hidden gems, iconic landmarks, and authentic local experiences.</p>
                     </div>
                 </div>
 

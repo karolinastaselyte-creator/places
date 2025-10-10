@@ -58,7 +58,7 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <span class="bg-white text-gray-800 font-bold rounded-full w-10 h-10 flex items-center justify-center">4.0</span>
+                                        <span class="bg-white text-gray-800 font-bold rounded-full text-sm w-9 h-9 flex items-center justify-center">4.0</span>
                                     </div>
 
                                     <p class="text-sm mb-2">
@@ -83,7 +83,7 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <span class="bg-white text-gray-800 font-bold rounded-full w-10 h-10 flex items-center justify-center">4.3</span>
+                                        <span class="bg-white text-gray-800 font-bold rounded-full text-sm w-9 h-9 flex items-center justify-center">4.3</span>
                                     </div>
 
                                     <p class="text-sm mb-2">
@@ -108,7 +108,7 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <span class="bg-white text-gray-800 font-bold rounded-full w-10 h-10 flex items-center justify-center">4.0</span>
+                                        <span class="bg-white text-gray-800 font-bold rounded-full text-sm w-9 h-9 flex items-center justify-center">4.0</span>
                                     </div>
 
                                     <p class="text-sm mb-2">
@@ -140,7 +140,7 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <span class="bg-white text-gray-800 font-bold rounded-full w-10 h-10 flex items-center justify-center">4.6</span>
+                                        <span class="bg-white text-gray-800 font-bold rounded-full text-sm w-9 h-9 flex items-center justify-center">4.6</span>
                                     </div>
 
                                     <p class="text-sm mb-2">
@@ -165,7 +165,7 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <span class="bg-white text-gray-800 font-bold rounded-full w-10 h-10 flex items-center justify-center">4.7</span>
+                                        <span class="bg-white text-gray-800 font-bold rounded-full text-sm w-9 h-9 flex items-center justify-center">4.7</span>
                                     </div>
 
                                     <p class="text-sm mb-2">
@@ -190,7 +190,7 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <span class="bg-white text-gray-800 font-bold rounded-full w-10 h-10 flex items-center justify-center">4.8</span>
+                                        <span class="bg-white text-gray-800 font-bold rounded-full text-sm w-9 h-9 flex items-center justify-center">4.8</span>
                                     </div>
 
                                     <p class="text-sm mb-2">
@@ -214,7 +214,7 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <span class="bg-white text-gray-800 font-bold rounded-full w-10 h-10 flex items-center justify-center">4.5</span>
+                                        <span class="bg-white text-gray-800 font-bold rounded-full text-sm w-9 h-9 flex items-center justify-center">4.5</span>
                                     </div>
 
                                     <p class="text-sm mb-2">
@@ -246,7 +246,7 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <span class="bg-white text-gray-800 font-bold rounded-full w-10 h-10 flex items-center justify-center">4.4</span>
+                                        <span class="bg-white text-gray-800 font-bold rounded-full text-sm w-9 h-9 flex items-center justify-center">4.4</span>
                                     </div>
 
                                     <p class="text-sm mb-2">
@@ -271,7 +271,7 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <span class="bg-white text-gray-800 font-bold rounded-full w-10 h-10 flex items-center justify-center">4.9</span>
+                                        <span class="bg-white text-gray-800 font-bold rounded-full text-sm w-9 h-9 flex items-center justify-center">4.9</span>
                                     </div>
 
                                     <p class="text-sm mb-2">
@@ -296,7 +296,7 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <span class="bg-white text-gray-800 font-bold rounded-full w-10 h-10 flex items-center justify-center">4.7</span>
+                                        <span class="bg-white text-gray-800 font-bold rounded-full text-sm w-9 h-9 flex items-center justify-center">4.7</span>
                                     </div>
 
                                     <p class="text-sm mb-2">
@@ -321,7 +321,7 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <span class="bg-white text-gray-800 font-bold rounded-full w-10 h-10 flex items-center justify-center">4.6</span>
+                                        <span class="bg-white text-gray-800 font-bold rounded-full text-sm w-9 h-9 flex items-center justify-center">4.6</span>
                                     </div>
 
                                     <p class="text-sm mb-2">
@@ -346,7 +346,7 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <span class="bg-white text-gray-800 font-bold rounded-full w-10 h-10 flex items-center justify-center">4.6</span>
+                                        <span class="bg-white text-gray-800 font-bold rounded-full text-sm w-9 h-9 flex items-center justify-center">4.6</span>
                                     </div>
 
                                     <p class="text-sm mb-2">
