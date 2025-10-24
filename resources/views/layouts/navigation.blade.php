@@ -11,11 +11,14 @@
                 </div>
 
                 <!-- Navigation Links -->
-                <!--<div class="hidden space-x-8 sm:-my-px sm:flex mx-auto">
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" class="text-white">
+                <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto text-white">
+                    <!--<x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" class="text-white">
                         {{ __('Dashboard') }}
-                    </x-nav-link>
-                </div> -->
+                    </x-nav-link>-->
+                    <a href="/places">Destinations</a>
+                    <p>-</p>
+                    <a href="/present">Your Page</a>
+                </div>
             </div>
 
             <!-- Settings Dropdown -->

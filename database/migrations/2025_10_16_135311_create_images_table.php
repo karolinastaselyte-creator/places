@@ -11,12 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('countries', function (Blueprint $table) {
+        Schema::create('images', function (Blueprint $table) {
             $table->id();
-            $table->string(column: 'name');
-            $table->text(column: 'description');
-            $table->string(column: 'image');
-            $table->foreignId(column: 'continent_id')->references(column: 'id')->on(table: 'continents');
+            $table->string(column: 'link');
+            $table->foreignId(column: 'places_id')->references(column: 'id')->on(table: 'places');
             $table->timestamps();
         });
     }
@@ -26,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('countries');
+        Schema::dropIfExists('images');
     }
 };
