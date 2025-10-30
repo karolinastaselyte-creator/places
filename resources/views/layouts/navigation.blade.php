@@ -15,7 +15,7 @@
                     <!--<x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" class="text-white">
                         {{ __('Dashboard') }}
                     </x-nav-link>-->
-                    <a href="/places">Destinations</a>
+                    <a href="/continent">Destinations</a>
                     <p>-</p>
                     <a href="/present">Your Page</a>
                 </div>

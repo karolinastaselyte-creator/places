@@ -2,19 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Continent;
+use App\Models\Country;
 use Illuminate\Http\Request;
 
-class ContinentController extends Controller
+class CountryController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $continents = Continent::all();
-
-        return view('continent/index', compact('continents'));
+        //
     }
 
 
@@ -23,13 +21,12 @@ class ContinentController extends Controller
      */
     public function show(string $id)
     {
-        $continent = Continent::findOrFail($id);
+        $country = Country::findOrFail($id);
 
         //dd($continent->toArray());
         //dd($continent->countries->toArray());
 
-        return view('continent/show', compact('continent'));
-
+        return view('country/show', compact('country'));
     }
 
     /**

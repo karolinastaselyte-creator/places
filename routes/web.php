@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ContinentController;
+use App\Http\Controllers\CountryController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -22,7 +23,15 @@ Route::get('/past', function () {
     return view('past');
 })->middleware("auth");
 
+Route::get('/future', function () {
+    return view('future');
+})->middleware("auth");
+
 Route::get('/continent', [ContinentController::class, 'index']);
+
+Route::get('/continent/{id}', [ContinentController::class, 'show']);
+
+Route::get('/country/{id}', [CountryController::class, 'show']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
