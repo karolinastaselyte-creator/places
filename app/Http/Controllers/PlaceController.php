@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Country;
 use App\Models\Places;
 use Illuminate\Http\Request;
 
-class CountryController extends Controller
+class PlaceController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -22,19 +21,12 @@ class CountryController extends Controller
      */
     public function show(string $id)
     {
-        $country = Country::findOrFail($id);
+        $place = Places::findOrFail($id);
 
-        $placesByCategory = Places::with('categories')
-            ->where('country_id', $id)
-            ->get()
-            ->groupBy('categories.name');
-
-
-
-        //dd($places->toArray());
+        //dd($continent->toArray());
         //dd($continent->countries->toArray());
 
-        return view('country/show', compact('country', 'placesByCategory'));
+        return view('place/show', compact('place'));                    
     }
 
     /**

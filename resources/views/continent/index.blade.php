@@ -22,7 +22,7 @@
                                     class="w-32 h-32 object-cover rounded-lg"
                                 >
                                 <a 
-                                    href=""
+                                    href="/continent/{{ $continent->id }}"
                                     class="absolute inset-0 flex items-center justify-center text-2xl font-semibold text-gray-900 dark:text-gray-100">
                                     {{ $continent->name }}
                                 </a>

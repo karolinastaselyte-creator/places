@@ -40,27 +40,30 @@
                             <div class="relative rounded overflow-hidden shadow-lg">
                                 <div class="absolute inset-0 bg-gray-900/70 z-0"></div>
 
-                                <div class="relative p-5 z-10 text-white">
-                                    <img 
-                                        src="{{ $country->image }}"
-                                        alt="{{ $country->name }}" 
-                                        class="w-full h-52 object-contain p-4 rounded"
-                                    >
-                                    <div class="flex justify-between items-center mb-2">
-                                        <div>
-                                            <h3 class="text-lg font-semibold">
-                                                {{ $country->name }}
-                                            </h3>
+                                <a href="/country/{{ $country->id }}">
+                                    <div class="relative p-5 z-10 text-white">
+                                        <img 
+                                            src="{{ $country->image }}"
+                                            alt="{{ $country->name }}" 
+                                            class="w-full h-52 object-contain p-4 rounded"
+                                        >
+                                        <div class="flex justify-between items-center mb-2">
+                                            <div>
+                                                <h3 class="text-lg font-semibold">
+                                                    {{ $country->name }}
+                                                </h3>
+                                            </div>
+                                            <span class="bg-white text-gray-800 font-bold rounded-full text-sm w-9 h-9 flex items-center justify-center">
+                                                {{$country->places()->count()}}
+                                            </span>
                                         </div>
-                                        <span class="bg-white text-gray-800 font-bold rounded-full text-sm w-9 h-9 flex items-center justify-center">
-                                            {{$country->places()->count()}}
-                                        </span>
-                                    </div>
 
-                                    <p class="text-sm mb-2">
-                                        {{ $country->description }}
-                                    </p>
-                                </div>
+                                        <p class="text-sm mb-2">
+                                            {{ $country->description }}
+                                        </p>
+                                    </div>
+                                </a>
+
                             </div>
                             @endforeach
                         </div>
