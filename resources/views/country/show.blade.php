@@ -1,14 +1,14 @@
 <x-app-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
+        <h2 class="font-semibold text-xl text-gray-200 leading-tight">
             Places testing
         </h2>
     </x-slot>
 
     <div class="py-[40px]">
         <div class="mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 text-gray-900 dark:text-gray-100">
+            <div class="bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
+                <div class="p-6 text-gray-100">
 
                     <div class="flex flex-col lg:flex-row items-center border-b-4 border-white border-double pt-4">
                         <!-- Flag -->
@@ -16,7 +16,7 @@
                             <img 
                                 src="{{ $country->image }}" 
                                 alt="{{ $country->name }} Flag"
-                                class="inline w-[300px] h-[282.91px] float-left p-5 m-8 border-2 border-white rounded-2xl"
+                                class="inline w-[300px] h-auto float-left p-5 m-8 border-2 border-white rounded-2xl"
                             >
                         </div>
 
@@ -42,8 +42,8 @@
 
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 m-5">
                             <!-- PLaces -->
-                            @foreach($places as $place)
-                            <div class="relative rounded overflow-hidden shadow-lg">
+                            @foreach($places->sortByDesc('rating') as $place)
+                            <div class="relative rounded overflow-hidden shadow-lg transition-transform duration-300 ease-in-out hover:scale-[1.03]">
                                 <div 
                                     class="absolute inset-0 bg-cover bg-center filter blur z-0" 
                                     style="background-image: url('{{ $place->firstImages() }}')">
@@ -63,10 +63,9 @@
                                                     {{ $place->name }}
                                                 </h3>
                                                 <div class="text-sm">
-                                                    <a target="_blank" href="https://www.google.com/maps/place/Jinghong,+Xishuangbanna+Dai+Autonomous+Prefecture,+Yunnan,+China/@22.0218016,100.3129501,9z/data=!3m1!4b1!4m6!3m5!1s0x312ab50227b0d78d:0x41bceda458368c20!8m2!3d22.0000799!4d100.77163!16zL20vMDRtbXJ4?entry=ttu" class="hover:underline">
-                                                        <!--22.0075° <span>N</span>, 100.7974° <span>E</span>-->
+                                                    <h1>
                                                         {{ $place->corednets }}
-                                                    </a>
+                                                    </h1>
                                                 </div>
                                             </div>
                                             <span class="bg-white text-gray-800 font-bold rounded-full text-sm w-9 h-9 flex items-center justify-center">
@@ -83,9 +82,7 @@
                             @endforeach
                         </div>
                         @endforeach
-
                     </div>
-
 
                 </div>
             </div>

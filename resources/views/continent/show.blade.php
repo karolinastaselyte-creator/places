@@ -1,14 +1,14 @@
 <x-app-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
+        <h2 class="font-semibold text-xl text-gray-200 leading-tight">
             Continent testing
         </h2>
     </x-slot>
 
     <div class="py-[40px]">
         <div class="mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 text-gray-900 dark:text-gray-100">
+            <div class="bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
+                <div class="p-6 text-gray-100">
 
                     <div class="flex flex-col lg:flex-row items-center border-b-4 border-white border-double pt-4">
                         <!-- Flag -->
@@ -36,8 +36,8 @@
                         <!--================ The Start of Coutrys ================-->
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 m-5">
                             <!-- Country -->
-                            @foreach($continent->countries as $country)
-                            <div class="relative rounded overflow-hidden shadow-lg">
+                            @foreach($continent->countries->sortBy('name') as $country)
+                            <div class="relative rounded overflow-hidden shadow-lg transition-transform duration-300 ease-in-out hover:scale-[1.03]">
                                 <div class="absolute inset-0 bg-gray-900/70 z-0"></div>
 
                                 <a href="/country/{{ $country->id }}">

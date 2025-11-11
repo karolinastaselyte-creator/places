@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-200 leading-tight">
-            Future testing
+            Bookmark testing
         </h2>
     </x-slot>
 
@@ -16,37 +16,54 @@
                         <!-- LEFT COLUMN – CATEGORIES -->
                         <div class="w-[80%] space-y-6">
                             <!-- Asia -->
-                            <div class="bg-[#08520B] rounded-lg p-4 flex items-center space-x-4 shadow">
+                            <div class="bg-gray-700 rounded-lg p-4 flex items-center justify-between shadow transition-transform duration-300 ease-in-out hover:scale-[1.03]">
+                                <!-- Image -->
                                 <div class="w-32 h-20 bg-gray-500 rounded-lg"></div>
-                                <p class="text-2xl font-semibold text-gray-900 dark:text-gray-100">Asia</p>
+
+                                <!-- Continent name (next to the box) -->
+                                <a 
+                                    href=""
+                                    class="text-2xl font-semibold text-gray-100 ml-6">
+                                    Asia
+                                </a>
+
+                                <!-- Countries count -->
+                                <div class="flex flex-col items-center ml-auto leading-none">
+                                    <span class="text-[40px] font-bold text-gray-100">
+                                        34
+                                    </span>
+                                    <span class="text-[15px] text-gray-400">
+                                        Places
+                                    </span>
+                                </div>
                             </div>
 
                             <!-- Africa -->
-                            <div class="bg-[#E0D278] rounded-lg p-4 flex items-center space-x-4 shadow">
+                            <div class="bg-gray-700 rounded-lg p-4 flex items-center space-x-4 shadow">
                                 <div class="w-32 h-20 bg-gray-500 rounded-lg"></div>
                                 <p class="text-2xl font-semibold text-gray-900 dark:text-gray-100">Africa</p>
                             </div>
 
                             <!-- North America -->
-                            <div class="bg-[#3C6632] rounded-lg p-4 flex items-center space-x-4 shadow">
+                            <div class="bg-gray-700 rounded-lg p-4 flex items-center space-x-4 shadow">
                                 <div class="w-32 h-20 bg-gray-500 rounded-lg"></div>
                                 <p class="text-2xl font-semibold text-gray-900 dark:text-gray-100">North America</p>
                             </div>
 
                             <!-- South America -->
-                            <div class="bg-[#6B8625] rounded-lg p-4 flex items-center space-x-4 shadow">
+                            <div class="bg-gray-700 rounded-lg p-4 flex items-center space-x-4 shadow">
                                 <div class="w-32 h-20 bg-gray-500 rounded-lg"></div>
                                 <p class="text-2xl font-semibold text-gray-900 dark:text-gray-100">South America</p>
                             </div>
 
                             <!-- Europe -->
-                            <div class="bg-[#32664A] rounded-lg p-4 flex items-center space-x-4 shadow">
+                            <div class="bg-gray-700 rounded-lg p-4 flex items-center space-x-4 shadow">
                                 <div class="w-32 h-20 bg-gray-500 rounded-lg"></div>
                                 <p class="text-2xl font-semibold text-gray-900 dark:text-gray-100">Europe</p>
                             </div>
 
                             <!-- Oceania -->
-                            <div class="bg-[#9F6335] rounded-lg p-4 flex items-center space-x-4 shadow">
+                            <div class="bg-gray-700 rounded-lg p-4 flex items-center space-x-4 shadow">
                                 <div class="w-32 h-20 bg-gray-500 rounded-lg"></div>
                                 <p class="text-2xl font-semibold text-gray-900 dark:text-gray-100">Oceania</p>
                             </div>

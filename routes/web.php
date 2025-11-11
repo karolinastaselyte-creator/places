@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BookmarkController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ContinentController;
 use App\Http\Controllers\CountryController;
@@ -11,10 +12,10 @@ Route::get('/', function () {
 })->middleware("guest");
 
 
+//--------------NOT IN USE--------------
 Route::get('/places', function () {
     return view('places');
 })->middleware("auth");
-
 
 Route::get('/present', function () {
     return view('present');
@@ -23,10 +24,17 @@ Route::get('/present', function () {
 Route::get('/past', function () {
     return view('past');
 })->middleware("auth");
+//--------------------------------------
+
+Route::get('/bookmark2', function () {
+    return view('bookContinent2');
+})->middleware("auth");
 
 Route::get('/future', function () {
     return view('future');
 })->middleware("auth");
+
+Route::get('/bookmark', [BookmarkController::class, 'index'])->middleware("auth");
 
 Route::get('/continent', [ContinentController::class, 'index']);
 
