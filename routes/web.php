@@ -24,7 +24,6 @@ Route::get('/present', function () {
 Route::get('/past', function () {
     return view('past');
 })->middleware("auth");
-//--------------------------------------
 
 Route::get('/bookmark2', function () {
     return view('bookContinent2');
@@ -34,6 +33,10 @@ Route::get('/future', function () {
     return view('future');
 })->middleware("auth");
 
+//--------------------------------------
+
+
+
 Route::get('/bookmark', [BookmarkController::class, 'index'])->middleware("auth");
 
 Route::get('/continent', [ContinentController::class, 'index']);
@@ -42,7 +45,7 @@ Route::get('/continent/{id}', [ContinentController::class, 'show']);
 
 Route::get('/country/{id}', [CountryController::class, 'show']);
 
-Route::get('/places/{id}', [PlaceController::class, 'show']);
+Route::get('/place/{id}', [PlaceController::class, 'show']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');

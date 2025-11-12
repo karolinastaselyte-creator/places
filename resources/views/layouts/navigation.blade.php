@@ -12,9 +12,6 @@
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:flex mx-auto text-white">
-                    <!--<x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" class="text-white">
-                        {{ __('Dashboard') }}
-                    </x-nav-link>-->
                     <a href="/continent">Destinations</a>
                     <p>-</p>
                     <a href="/bookmark">Bookmarks</a>

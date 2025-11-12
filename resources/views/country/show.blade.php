@@ -26,14 +26,14 @@
                                 {{ $country->name }}
                             </h1>
                             <p class="ml-8 lg:ml-0 mr-8 mb-4 lg:mb-0 text-justify text-base leading-relaxed">
-                                {{ $country->description }}
+                                {{ $country->big_description }}
                             </p>
                         </div>
                     </div>
 
                     <div class="bg-gray-800/50">
                         <!--================ Urban Destinations ================-->
-                        @foreach($placesByCategory as $category => $places)
+                        @foreach($placesByCategory as $category => $place)
                         <div class="text-white bg-gray-700 px-5 py-2 border-b border-white">
                             <h1 class="text-2xl font-semibold">
                                 {{ $category }}
@@ -42,7 +42,7 @@
 
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 m-5">
                             <!-- PLaces -->
-                            @foreach($places->sortByDesc('rating') as $place)
+                            @foreach($place->sortByDesc('rating') as $place)
                             <div class="relative rounded overflow-hidden shadow-lg transition-transform duration-300 ease-in-out hover:scale-[1.03]">
                                 <div 
                                     class="absolute inset-0 bg-cover bg-center filter blur z-0" 
@@ -50,7 +50,7 @@
                                 </div>
                                 <div class="absolute inset-0 bg-gray-900/70 z-0"></div>
 
-                                <a href="/places/{{ $place->id }}">
+                                <a href="/place/{{ $place->id }}">
                                     <div class="relative p-5 z-10 text-white">
                                         <img 
                                             src="{{ $place->firstImages() }}" 
@@ -73,7 +73,7 @@
                                             </span>
                                         </div>
 
-                                        <p class="text-sm mb-2">
+                                        <p class="text-sm mb-2 text-justify">
                                             {{ $place->description }}
                                         </p>
                                     </div>

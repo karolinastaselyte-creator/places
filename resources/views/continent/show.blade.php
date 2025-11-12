@@ -54,11 +54,11 @@
                                                 </h3>
                                             </div>
                                             <span class="bg-white text-gray-800 font-bold rounded-full text-sm w-9 h-9 flex items-center justify-center">
-                                                {{$country->places()->count()}}
+                                                {{$country->place()->count()}}
                                             </span>
                                         </div>
 
-                                        <p class="text-sm mb-2">
+                                        <p class="text-sm mb-2 text-justify">
                                             {{ $country->description }}
                                         </p>
                                     </div>

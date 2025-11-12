@@ -46,7 +46,7 @@ class User extends Authenticatable
         ];
     }
 
-    public function places() {
-        return $this->belongsToMany(Places::class);
+    public function place() {
+        return $this->belongsToMany(Place::class);
     }
 }

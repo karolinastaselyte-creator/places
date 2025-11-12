@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('images', function (Blueprint $table) {
             $table->id();
             $table->string(column: 'link');
-            $table->foreignId(column: 'places_id')->references(column: 'id')->on(table: 'places');
+            $table->foreignId(column: 'place_id')->references(column: 'id')->on(table: 'places');
             $table->timestamps();
         });
     }

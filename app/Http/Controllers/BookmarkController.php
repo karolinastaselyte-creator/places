@@ -11,10 +11,10 @@ class BookmarkController extends Controller
      */
     public function index()
     {
-        $places = auth()->user()->places;
-        dd($places->toArray());
+        $places_byCountry = auth()->user()->place()->with('country')->get()->groupBy('country.name');
+        //dd($places_byCountry->toArray());
 
-        return view('bookmarks/index', compact('places'));
+        return view('bookmark/index', compact('places_byCountry'));
     }
 
     /**

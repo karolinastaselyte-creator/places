@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Country;
-use App\Models\Places;
+use App\Models\Place;
 use Illuminate\Http\Request;
 
 class CountryController extends Controller
@@ -24,15 +24,10 @@ class CountryController extends Controller
     {
         $country = Country::findOrFail($id);
 
-        $placesByCategory = Places::with('categories')
+        $placesByCategory = Place::with('categories')
             ->where('country_id', $id)
             ->get()
             ->groupBy('categories.name');
-
-
-
-        //dd($places->toArray());
-        //dd($continent->countries->toArray());
 
         return view('country/show', compact('country', 'placesByCategory'));
     }

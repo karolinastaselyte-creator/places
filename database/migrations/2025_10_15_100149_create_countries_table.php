@@ -15,8 +15,10 @@ return new class extends Migration
             $table->id();
             $table->string(column: 'name');
             $table->text(column: 'description');
+            $table->text(column: 'big_description');
             $table->string(column: 'image');
             $table->foreignId(column: 'continent_id')->references(column: 'id')->on(table: 'continents');
+
             $table->timestamps();
         });
     }
