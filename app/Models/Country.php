@@ -12,4 +12,9 @@ class Country extends Model
     {
         return $this->hasMany(place::class);
     }
+
+    public function continent()
+    {
+        return $this->belongsTo(continent::class);
+    }
 }

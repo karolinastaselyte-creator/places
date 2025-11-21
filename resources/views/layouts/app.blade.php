@@ -22,12 +22,13 @@
     </head>
     <body class="font-sans antialiased">
         <div class="min-h-screen">
-            @include('layouts.navigation')
-
+            @if(auth()->check())
+                @include('layouts.navigation')
+            @endif
             <!-- Page Heading -->
             @isset($header)
                 <header class="bg-[#6D8172] shadow">
-                    <div class="max-w-7xl mx-auto h-[35px] px-4 sm:px-6 lg:px-8 flex items-center justify-center">
+                    <div class="max-w-7xl mx-auto h-[20px] px-4 sm:px-6 lg:px-8 flex items-center justify-center">
                         {{ $header }}
                     </div>
                 </header>

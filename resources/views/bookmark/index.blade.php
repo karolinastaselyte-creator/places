@@ -1,13 +1,10 @@
 <x-app-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-200 leading-tight">
-            Bookmark testing
-        </h2>
-
         <style>
             html {
                 scroll-behavior: smooth;
             }
+            
         </style>
     </x-slot>
 
@@ -27,17 +24,53 @@
                         </div>
 
                         <!-- Country Names -->
-                        <div class="flex flex-wrap justify-center gap-8 text-lg text-white">
-                            @foreach($places_byCountry as $country => $place)
-                            <a href="#country-{{ Str::slug($country) }}" class="hover:text-yellow-400 transition-colors">
-                                {{ $country }}
-                            </a>
+                        <div class="flex flex-wrap justify-center text-base text-white w-full">
+                            @foreach($places_byContinent->sortKeys() as $continent => $countries)
+                                {{-- Continent name --}}
+                                @php
+                                    // Map continents to colors
+                                    $continentColors = [
+                                        'Asia' => 'text-[#B3B5A2]',
+                                        'Africa' => 'text-[#A5AB98]',
+                                        'North America' => 'text-[#97A08E]',
+                                        'South America' => 'text-[#899585]',
+                                        'Europe' => 'text-[#7B8B7B]',
+                                        'Oceania' => 'text-[#6D8172]',
+                                    ];
+
+                                    // Sort the country names alphabetically for this continent
+                                    $countries = collect($countries)->sort()->values();
+                                @endphp
+                                <div class="w-full text-center">
+                                    <h2 class="text-xl font-semibold uppercase tracking-wide {{ $continentColors[$continent] ?? 'text-white' }}">
+                                        {{ $continent }}
+                                    </h2>
+                                </div>
+
+                                {{-- Countries container --}}
+                                <div class="relative flex flex-wrap justify-center {{ $loop->last ? 'pb-0 mb-0' : 'pb-1 mb-2' }}"> 
+                                    @foreach ($countries as $country)
+                                        <div class="px-3 mb-2"> <!-- Horizontal & vertical spacing -->
+                                            <a href="#country-{{ Str::slug($country) }}" class="hover:text-[#6D8172] transition-colors">
+                                                {{ $country }}
+                                            </a>
+                                        </div>
+                                    @endforeach
+
+                                    {{-- Border slightly longer than countries, skip on last continent --}}
+                                    @unless($loop->last)
+                                        <div class="absolute bottom-0 left-1/2 border-b border-gray-700"
+                                            style="width: calc(95% + 60px); transform: translateX(-50%);">
+                                        </div>
+                                    @endunless
+                                </div>
                             @endforeach
                         </div>
 
+
                         <div class="bg-gray-800/50">
                             <!--================ Organizer ================-->
-                            @foreach($places_byCountry as $country => $place)
+                            @forelse($places_byCountry->sortKeys() as $country => $place)
                             <hr class="border-b border-white border-double mt-4">
                             <div id="country-{{ Str::slug($country) }}" class="text-white bg-gray-700 px-5 py-2 border-b border-white">
                                 <h1 class="text-2xl font-semibold">
@@ -78,7 +111,7 @@
                                                 </span>
                                             </div>
 
-                                            <p class="text-sm mb-2">
+                                            <p class="text-sm mb-2 text-justify">
                                                 {{ $place->description }}
                                             </p>
                                         </div>
@@ -86,7 +119,9 @@
                                 </div>
                                 @endforeach
                             </div>
-                            @endforeach
+                            @empty
+                                <p class="text-white text-center text-[20px]">No places bookmarked yet</p>
+                            @endforelse
                         </div>
                     <!-- END MAIN GRID -->
 

@@ -1,8 +1,5 @@
 <x-app-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-200 leading-tight">
-            Continent testing
-        </h2>
     </x-slot>
 
     <div class="py-[40px]">

@@ -11,41 +11,15 @@ Route::get('/', function () {
     return view('welcome');
 })->middleware("guest");
 
+Route::get('/bookmark', [BookmarkController::class, 'index'])->middleware("auth")->name('bookmark');
+Route::post('bookmark/{id}', [BookmarkController::class, 'store'])->middleware("auth");
 
-//--------------NOT IN USE--------------
-Route::get('/places', function () {
-    return view('places');
-})->middleware("auth");
+Route::get('/continent', [ContinentController::class, 'index'])->middleware("auth");
+Route::get('/continent/{id}', [ContinentController::class, 'show'])->middleware("auth");
 
-Route::get('/present', function () {
-    return view('present');
-})->middleware("auth");
+Route::get('/country/{id}', [CountryController::class, 'show'])->middleware("auth");
 
-Route::get('/past', function () {
-    return view('past');
-})->middleware("auth");
-
-Route::get('/bookmark2', function () {
-    return view('bookContinent2');
-})->middleware("auth");
-
-Route::get('/future', function () {
-    return view('future');
-})->middleware("auth");
-
-//--------------------------------------
-
-
-
-Route::get('/bookmark', [BookmarkController::class, 'index'])->middleware("auth");
-
-Route::get('/continent', [ContinentController::class, 'index']);
-
-Route::get('/continent/{id}', [ContinentController::class, 'show']);
-
-Route::get('/country/{id}', [CountryController::class, 'show']);
-
-Route::get('/place/{id}', [PlaceController::class, 'show']);
+Route::get('/place/{id}', [PlaceController::class, 'show'])->middleware("auth");
 
 Route::get('/dashboard', function () {
     return view('dashboard');
